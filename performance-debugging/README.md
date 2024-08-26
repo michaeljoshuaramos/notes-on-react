@@ -18,4 +18,6 @@ Here's the situation: The app is slow. Each event in the app triggers a JavaScri
 
 Install the React Developer Tools extension if you haven't already, reload DevTools, and switch to the Profiler tab. Re-record the interaction with the Profiler, then analyze the results. You'll see all renders triggered by your interaction and the components involved, helping you pinpoint where the lag occurs. [^1]
 
+**[⬆ back to top](#table-of-contents)**
+
 [^1]: Ivan Akulov, "React Performance Debugging Masterclass," presented at React Summit 2023, [https://gitnation.com/contents/react-performance-debugging-masterclass](https://gitnation.com/contents/react-performance-debugging-masterclass).
