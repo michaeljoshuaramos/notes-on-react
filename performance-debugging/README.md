@@ -1,5 +1,9 @@
 # React: Performance Debugging
 
+## Table of Contents
+
+1. [Profiling With Chrome Devtools and React Profiler](#profiling-with-chrome-devtools-and-react-profiler)
+
 ## Profiling With Chrome Devtools and React Profiler
 
 ### Record the App’s Activity With Chrome Devtools
