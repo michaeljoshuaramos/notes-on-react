@@ -16,7 +16,9 @@ Analyze the CPU spikes to pinpoint where the app slows down. You don't need to i
 
 Here's the situation: The app is slow. Each event in the app triggers a JavaScript task, which then leads to a chain of React code execution. You don't need to understand the code deeply—just recognize that **if React code dominates the performance recording, it’s time to switch to the React Profiler.**
 
-Install the React Developer Tools extension if you haven't already, reload DevTools, and switch to the Profiler tab. Record again the interaction with the Profiler to see every component that renders during your interaction. You'll be able to see all the renders that occurred and identify every component that re-rendered during each render. [^1]
+Install the React Developer Tools extension if you haven't already, reload DevTools, and switch to the Profiler tab. Record again the interaction with the Profiler to see every component that renders during your interaction. You'll be able to see all the renders that occurred and identify every component that re-rendered during each render.
+
+After profiling the interaction, identify and prevent unnecessary component re-renders to speed up the interaction. [^1]
 
 **[⬆ back to top](#table-of-contents)**
 
