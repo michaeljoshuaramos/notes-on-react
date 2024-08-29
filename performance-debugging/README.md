@@ -18,7 +18,9 @@ Here's the situation: The app is slow. Each event in the app triggers a JavaScri
 
 Install the React Developer Tools extension if you haven't already, reload DevTools, and switch to the Profiler tab. Record again the interaction with the Profiler to see every component that renders during your interaction. You'll be able to see all the renders that occurred and identify every component that re-rendered during each render.
 
-After profiling the interaction, identify and prevent unnecessary component re-renders to speed up the interaction. [^1]
+After profiling the interaction, identify and prevent unnecessary component re-renders to speed up the interaction.
+
+Optimizing React Code and Effects [^1]
 
 **[⬆ back to top](#table-of-contents)**
 
