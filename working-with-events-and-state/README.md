@@ -32,6 +32,7 @@
 **Exercise 1: Basic State Management**
 
 **Objective**: Create a simple counter application.
+
 **Instructions**:
 
 1. Create a functional component with a button and a display for the count.
@@ -41,8 +42,6 @@
 **Expected Solution:**
 
 ```
-"use client"
-
 import { useState } from "react";
 
 export default function Home() {
@@ -64,6 +63,7 @@ export default function Home() {
 **Exercise 2: Managing Complex State**
 
 **Objective**: Create a form with multiple inputs and manage their state.
+
 **Instructions**:
 
 1. Create a form with inputs for name and email.
@@ -73,8 +73,6 @@ export default function Home() {
 **Expected Solution:**
 
 ```
-"use client";
-
 import { useState } from "react";
 
 export default function Form() {
@@ -118,3 +116,5 @@ export default function Form() {
   );
 }
 ```
+
+**[⬆ back to top](#table-of-contents)**
