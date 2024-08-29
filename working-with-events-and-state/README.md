@@ -40,6 +40,7 @@ and the component receiving the state as a prop.
 - Don’t set state in the render logic.
 - Each component has and manages **its own state**, no matter how many times we render the same component on a screen. States are isolated inside of each instance of component.
 - For data that should not trigger component re-renders, **don't use state.** Use a regular variable instead.
+- Whenever a piece of state is passed as a prop, when that state updates, both components are re-rendered - both the component owning the state and the component receiving the state as a prop.
 
 **[⬆ back to top](#table-of-contents)**
 
