@@ -25,6 +25,8 @@ The `useState` Hook provides those two things:
 
 When you call `useState`, you are telling React that you want this component to remember something.
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Lifting State Up
 
 Having multiple components depend on some shared piece of state is a scenario you will face frequently when working with React. This problem can be solved by _lifting state up._
@@ -50,6 +52,7 @@ and the component receiving the state as a prop.
 - Each component has and manages **its own state**, no matter how many times we render the same component on a screen. States are isolated inside of each instance of component.
 - For data that should not trigger component re-renders, **don't use state.** Use a regular variable instead.
 - Whenever a piece of state is passed as a prop, when that state updates, both components are re-rendered - both the component owning the state and the component receiving the state as a prop.
+- _Lift the state up_ when multiple components need to share and synchronize state.
 
 **[⬆ back to top](#table-of-contents)**
 
