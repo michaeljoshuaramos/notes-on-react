@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [State: A Component's Memory](#state-a-components-memory)
+1. [State vs. Props](#state-vs-props)
 1. [Key Points](#key-points)
 1. [Knowledge Questions](#knowledge-questions)
 1. [Exercises](#exercises)
@@ -23,12 +24,16 @@ The useState Hook provides those two things:
 
 When you call useState, you are telling React that you want this component to remember something.
 
+## State vs. Props
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Key Points
 
 - Don’t set state manually (i.e. don’t use the variable directly to update itself), use the set function provided by the `useState` hook.
 - Don’t set state in the render logic.
+- Each component has and manages **its own state**, no matter how many times we render the same component on a screen. States are isolated inside of each instance of component.
+- For data that should not trigger component re-renders, **don't use state.** Use a regular variable instead.
 
 **[⬆ back to top](#table-of-contents)**
 
