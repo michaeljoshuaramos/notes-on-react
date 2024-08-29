@@ -17,14 +17,20 @@ To update a component with new data, two things need to happen:
 1. Retain the data between renders.
 1. Trigger React to render the component with new data (re-rendering).
 
-The useState Hook provides those two things:
+The `useState` Hook provides those two things:
 
 1. A state variable to retain the data between renders.
 1. A state setter function to update the variable and trigger React to render the component again.
 
-When you call useState, you are telling React that you want this component to remember something.
+When you call `useState`, you are telling React that you want this component to remember something.
 
 ## State vs. Props
+
+- State is internal data owned by the component. Props are external data owned by the parent component.
+- State can be updated by the component itself. Props are read-only. Props cannot be modified by the component receiving them.
+
+**Note:** Whenever a piece of state is passed as a prop, when that state updates, both components are re-rendered - both the component owning the state
+and the component receiving the state as a prop.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -60,16 +66,16 @@ When you call useState, you are telling React that you want this component to re
 **Instructions**:
 
 1. Create a functional component with a button and a display for the count.
-2. Use the useState hook to manage the count state.
+2. Use the `useState` hook to manage the count state.
 3. Implement functionality to increment the count when the button is clicked.
 
 **Expected Solution:**
 
 ```
-import { useState } from "react";
+import { `useState` } from "react";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = `useState`(0);
 
   const handleStep = () => {
     setCount((c) => c + 1);
@@ -91,16 +97,16 @@ export default function Home() {
 **Instructions**:
 
 1. Create a form with inputs for name and email.
-2. Use the useState hook to manage the state of the form inputs.
+2. Use the `useState` hook to manage the state of the form inputs.
 3. Display the current state of the form inputs below the form.
 
 **Expected Solution:**
 
 ```
-import { useState } from "react";
+import { `useState` } from "react";
 
 export default function Form() {
-  const [formData, setFormData] = useState({ name: "", email: "" });
+  const [formData, setFormData] = `useState`({ name: "", email: "" });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
