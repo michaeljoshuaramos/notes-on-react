@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [State: A Component's Memory](#state-a-components-memory)
+1. [Lifting State Up](#lifting-state-up)
 1. [State vs. Props](#state-vs-props)
 1. [Key Points](#key-points)
 1. [Knowledge Questions](#knowledge-questions)
@@ -23,6 +24,14 @@ The `useState` Hook provides those two things:
 1. A state setter function to update the variable and trigger React to render the component again.
 
 When you call `useState`, you are telling React that you want this component to remember something.
+
+## Lifting State Up
+
+Having multiple components depend on some shared piece of state is a scenario you will face frequently when working with React. This problem can be solved by _lifting state up._
+
+Lifting state up in React means moving shared state to the closest common ancestor of components that need it. This ensures a single source of truth and allows components to stay in sync with each other.
+
+**[⬆ back to top](#table-of-contents)**
 
 ## State vs. Props
 
