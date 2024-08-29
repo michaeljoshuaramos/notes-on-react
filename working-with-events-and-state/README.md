@@ -12,7 +12,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## FAQ
+## Knowledge Questions
 
 - Why use the set function provided by the `useState` hook?
 
@@ -24,4 +24,4 @@
   - In React, state updates are asynchronous and can be batched for performance reasons.
   - When you call the setState function, React schedules an update rather than immediately applying the changes.
 
-  **[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
