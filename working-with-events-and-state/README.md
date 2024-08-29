@@ -2,9 +2,28 @@
 
 ## Table of Contents
 
+1. [State: A Component's Memory](#state-a-components-memory)
 1. [Key Points](#key-points)
 1. [Knowledge Questions](#knowledge-questions)
 1. [Exercises](#exercises)
+
+## State: A Component's Memory
+
+Components often need to change what’s on the screen as a result of an interaction. Components update based on new data. In React, this kind of component-specific memory is called state.
+
+To update a component with new data, two things need to happen:
+
+1. Retain the data between renders.
+1. Trigger React to render the component with new data (re-rendering).
+
+The useState Hook provides those two things:
+
+1. A state variable to retain the data between renders.
+1. A state setter function to update the variable and trigger React to render the component again.
+
+When you call useState, you are telling React that you want this component to remember something.
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Key Points
 
@@ -23,7 +42,7 @@
 
   - Using the callback function form of the set function ensures that state updates based on the current state receive the most recent value.
   - In React, state updates are asynchronous and can be batched for performance reasons.
-  - When you call the setState function, React schedules an update rather than immediately applying the changes.
+  - When you call the set function, React schedules an update rather than immediately applying the changes.
 
 **[⬆ back to top](#table-of-contents)**
 
