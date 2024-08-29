@@ -1,4 +1,4 @@
-# React: Performance Debugging
+# Performance Debugging
 
 ## Table of Contents
 
