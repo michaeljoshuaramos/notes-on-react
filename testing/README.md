@@ -6,7 +6,7 @@
 
 ## Key Points
 
-## Testing `useffect` With API Calls
+## Testing `useEffect` With API Calls
 
 Avoid executing real API calls inside your tests because:
 
@@ -20,7 +20,7 @@ Instead, mocking API calls in tests allows you to control the environment, makin
 
 ### Mocking API Calls
 
-React Testing Library recommends using the Mock Service Worker (MSW)[https://github.com/mswjs/msw] library to declaratively mock API communication in your tests.
+[React Testing Library](https://testing-library.com/docs/react-testing-library/example-intro#mock) recommends using the [Mock Service Worker (MSW)](https://github.com/mswjs/msw) library to declaratively mock API communication in your tests.
 
 Tags.jsx
 
