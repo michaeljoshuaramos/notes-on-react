@@ -12,9 +12,9 @@ When facing a performance issue, open Chrome DevTools' Performance pane. Start b
 
 Analyze the CPU spikes to pinpoint where the app slows down. You don't need to inspect every function—just look for the color pattern. If multiple functions share the same color, they likely originate from the same source. In Chrome DevTools, functions from the same file are colored similarly, so if you identify one function as coming from `react-dom development`, you can safely assume others with the same color do too.
 
-### Record the App’s Activity With React Profiler
-
 Here's the situation: The app is slow. Each event in the app triggers a JavaScript task, which then leads to a chain of React code execution. You don't need to understand the code deeply—just recognize that **if React code dominates the performance recording, it’s time to switch to the React Profiler.**
+
+### Record the App’s Activity With React Profiler
 
 Install the React Developer Tools extension if you haven't already, reload DevTools, and switch to the Profiler tab. Record again the interaction with the Profiler to see every component that renders during your interaction. You'll be able to see all the renders that occurred and identify every component that re-rendered during each render.
 

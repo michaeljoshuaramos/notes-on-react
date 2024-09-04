@@ -39,6 +39,45 @@ describe("utils", () => {
 
 **[⬆ back to top](#table-of-contents)**
 
+## Testing Components
+
+ErrorMessage.jsx
+
+```javascript
+import React from "react";
+
+const ErrorMessage = ({ message = "Something went wrong" }) => {
+  return <div data-testid="message-container">{message}</div>;
+};
+
+export default ErrorMessage;
+```
+
+ErrorMessage.test.jsx
+
+```javascript
+import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import ErrorMessage from "./ErrorMessage";
+
+describe("ErrorMessage", () => {
+  it("render default error state", () => {
+    render(<ErrorMessage />);
+    expect(screen.getByTestId("message-container")).toHaveTextContent(
+      "Something went wrong"
+    );
+  });
+  it("render custom error state", () => {
+    render(<ErrorMessage message="Email is already taken" />);
+    expect(screen.getByTestId("message-container")).toHaveTextContent(
+      "Email is already taken"
+    );
+  });
+});
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Testing `useEffect` Hook With API Calls
 
 Avoid executing real API calls inside your tests because:
