@@ -81,4 +81,20 @@ describe("Tags", () => {
 });
 ```
 
+### The Approach
+
+1. Simulate API Calls with MSW:
+   - **MSW (Mock Service Worker)** is used to mock the network requests that `axios` makes in the `useEffect`. This allows you to simulate the API response without making actual network requests.
+2. Setup the Mock Server:
+   - `setupServer()` creates a mock server that intercepts the `axios.get` request to `http://localhost:3004/tags`.
+   - The server is configured to return a predefined JSON response (`[{ id: "1", name: "bar" }]`), simulating what the real API would return.
+3. Manage the Server Lifecycle:
+   - `beforeAll()` starts the server before any tests run, ensuring it intercepts network requests during testing.
+   - `afterEach()` resets any request handlers that may have been modified during individual tests, keeping tests isolated and repeatable.
+   - `afterAll()` stops the server after all tests complete, cleaning up resources.
+4. Test the Component Behavior:
+   - **Render the Component**: The `Tags` component is rendered as usual.
+   - **Await and Assert**: `screen.findAllByTestId("tag")` is used to find all elements with the `data-testid="tag"` attribute. Since `findAllByTestId` waits for the elements to appear asynchronously, it aligns with the async nature of the API call in `useEffect`.
+   - **Assertion**: The test checks that exactly one tag is rendered (`expect(tags).toHaveLength(1)`), which corresponds to the mock response.
+
 **[⬆ back to top](#table-of-contents)**
