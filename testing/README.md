@@ -1,12 +1,45 @@
-# React Testing: Unit Testing and End-to-end Testing
+# React Testing: Unit Testing With Vitest and End-to-end Testing With Playwright
 
 ## Table of Contents
 
-1. [Key Points](#key-points)
+1. [Testing Functions](#testing-functions)
+1. [Testing Components](#testing-components)
+1. [Testing useState Hook](#testing-usestate-hook)
+1. [Testing useEffect Hook With API Calls](#testing-useeffect-hook-with-api-calls)
 
-## Key Points
+## Testing Functions
 
-## Testing `useEffect` With API Calls
+utils.js
+
+```javascript
+export const range = (start, end) => {
+  return [...Array(end - start).keys()].map((el) => el + start);
+};
+```
+
+utils.test.js
+
+```javascript
+import { describe, expect, it } from "vitest";
+import { range } from "./utils";
+
+describe("utils", () => {
+  describe("range", () => {
+    it("returns correct result from 1-6 range", () => {
+      const result = range(1, 6);
+      expect(result).toEqual([1, 2, 3, 4, 5]);
+    });
+    it("returns correct result from 41-45 range", () => {
+      const result = range(41, 45);
+      expect(result).toEqual([41, 42, 43, 44]);
+    });
+  });
+});
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Testing `useEffect` Hook With API Calls
 
 Avoid executing real API calls inside your tests because:
 
