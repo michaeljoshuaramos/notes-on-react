@@ -16,7 +16,7 @@ Avoid executing real API calls inside your tests because:
 4. **Side Effects**: Real API calls can alter data on the server, leading to inconsistent test results and potential data corruption.
 5. **Isolation**: Tests should focus on the component’s behavior, not the external system's reliability, ensuring that failures are related to code changes, not external factors.
 
-Instead, mocking API calls in tests allows you to control the environment, making tests faster, more reliable, and cost-effective.
+Instead, mocking API calls in tests allows you to control the environment, making tests faster, more reliable, and cost-effective. [^1]
 
 ### Mocking API Calls
 
@@ -98,3 +98,5 @@ describe("Tags", () => {
    - **Assertion**: The test checks that exactly one tag is rendered (`expect(tags).toHaveLength(1)`), which corresponds to the mock response.
 
 **[⬆ back to top](#table-of-contents)**
+
+[^1]: Oleksandr Kocherhin, "React Testing: Unit Testing React and E2E Testing," Udemy, [https://www.udemy.com/course/react-testing-unit-testing-react-and-e2e-testing/](https://www.udemy.com/course/react-testing-unit-testing-react-and-e2e-testing/).
