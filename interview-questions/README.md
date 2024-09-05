@@ -3,12 +3,12 @@
 ## Table of Contents
 
 1. [Basic React Concepts](#basic-react-concepts)
-2. [Advanced React Concepts](#advanced-react-concepts)
-3. [Redux and State Management](#redux-and-state-management)
-4. [Testing in React](#testing-in-react)
-5. [Performance and Optimization](#performance-and-optimization)
-6. [Ecosystem and Tooling](#ecosystem-and-tooling)
-7. [Practical and Behavioral Questions](#practical-and-behavioral-questions)
+1. [Advanced React Concepts](#advanced-react-concepts)
+1. [Redux and State Management](#redux-and-state-management)
+1. [Testing in React](#testing-in-react)
+1. [Performance and Optimization](#performance-and-optimization)
+1. [Ecosystem and Tooling](#ecosystem-and-tooling)
+1. [Practical and Behavioral Questions](#practical-and-behavioral-questions)
 
 ## Basic React Concepts
 
