@@ -17,3 +17,4 @@
 
 1. [Performance Debugging](https://github.com/michaeljoshuaramos/notes-on-react/tree/main/performance-debugging)
 1. [Testing](https://github.com/michaeljoshuaramos/notes-on-react/tree/main/testing)
+1. [Interview Questions](https://github.com/michaeljoshuaramos/notes-on-react/tree/main/interview-questions)

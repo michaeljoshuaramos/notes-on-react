@@ -10,8 +10,6 @@
 6. [Ecosystem and Tooling](#ecosystem-and-tooling)
 7. [Practical and Behavioral Questions](#practical-and-behavioral-questions)
 
----
-
 ## Basic React Concepts
 
 1. What is React and why is it used?
@@ -26,8 +24,6 @@
 10. What is the useEffect hook and how is it different from lifecycle methods in class components?
 
 **[⬆ back to top](#table-of-contents)**
-
----
 
 ## Advanced React Concepts
 
@@ -44,8 +40,6 @@
 
 **[⬆ back to top](#table-of-contents)**
 
----
-
 ## Redux and State Management
 
 1. What is Redux and why is it used?
@@ -60,8 +54,6 @@
 10. What are thunks in Redux?
 
 **[⬆ back to top](#table-of-contents)**
-
----
 
 ## Testing in React
 
@@ -78,8 +70,6 @@
 
 **[⬆ back to top](#table-of-contents)**
 
----
-
 ## Performance and Optimization
 
 1. What are some common performance issues in React applications?
@@ -95,8 +85,6 @@
 
 **[⬆ back to top](#table-of-contents)**
 
----
-
 ## Ecosystem and Tooling
 
 1. What build tools have you used with React?
@@ -111,8 +99,6 @@
 10. What version control systems have you used?
 
 **[⬆ back to top](#table-of-contents)**
-
----
 
 ## Practical and Behavioral Questions
 
