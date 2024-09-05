@@ -12,7 +12,7 @@
 
 ## Basic React Concepts
 
-1. What is React and why is it used?
+1. **What is React and why is it used?**
 
    React is a JavaScript library developed by Meta for building user interfaces, primarily for single-page applications. It allows developers to create reusable UI components, which can manage their own state and render efficiently when data changes. React is used because it simplifies the process of building complex, interactive, and dynamic user interfaces by using a component-based architecture. Additionally, React's use of a virtual DOM improves performance by minimizing direct manipulation of the actual DOM, resulting in faster and more efficient updates.
 
