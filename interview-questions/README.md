@@ -13,12 +13,19 @@
 ## Basic React Concepts
 
 1. What is React and why is it used?
+
    React is a JavaScript library developed by Meta for building user interfaces, primarily for single-page applications. It allows developers to create reusable UI components, which can manage their own state and render efficiently when data changes. React is used because it simplifies the process of building complex, interactive, and dynamic user interfaces by using a component-based architecture. Additionally, React's use of a virtual DOM improves performance by minimizing direct manipulation of the actual DOM, resulting in faster and more efficient updates.
+
 2. Explain the difference between a class component and a functional component.
+
    A class component in React is a component defined using ES6 class syntax. It can hold and manage its own state and has access to lifecycle methods, like componentDidMount and componentDidUpdate. A functional component, on the other hand, is a simpler way to create components using plain JavaScript functions. Initially, functional components were stateless, but with the introduction of hooks like useState and useEffect in React 16.8, they can now manage state and side effects, making them as powerful as class components but with less boilerplate.
+
 3. What is JSX and why is it used in React?
+
    JSX, or JavaScript XML, is a syntax extension for JavaScript used in React to describe what the UI should look like. It allows developers to write HTML-like code within JavaScript, which React then transforms into React elements. JSX makes the code more readable and easier to write, as it provides a clear structure for the UI and helps catch errors at compile time. It also allows for seamless integration of JavaScript expressions, making it a powerful tool for building dynamic user interfaces.
+
 4. How do you create a React component?
+
    To create a React component, you can use either a function or a class.
 
    Functional Component:
