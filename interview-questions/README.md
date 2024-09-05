@@ -74,9 +74,49 @@
    - State can be updated by the component itself. Props are read-only. Props cannot be modified by the component receiving them.
 
 7. Explain state management in React. How do you update the state?
+
+   State management in React involves maintaining and updating the state of components to reflect changes in the UI. Each component can have its own state, which is an object that holds data that may change over time.
+
+   To update the state, you use the setState method in the useState hook in functional components. This schedules an update to the component's state and trigger a re-render to reflect the changes in the UI.
+
 8. What are lifecycle methods in React? Name some of them.
 9. What are hooks in React? Name some commonly used hooks.
+
+   Hooks in React are special functions that simplify component logic and make it easier to reuse stateful logic across components.
+
+   Commonly used hooks include:
+
+   - useState: Manages state in functional components.
+   - useEffect: Handles side effects like data fetching, subscriptions, or manually changing the DOM.
+   - useContext: Accesses context values without needing a context consumer.
+   - useRef: Persists values between renders and can reference DOM elements.
+   - useReducer: Manages complex state logic with a reducer function.
+   - useMemo: Memoizes expensive calculations to optimize performance.
+   - useCallback: Memoizes functions to prevent unnecessary re-creations during renders.
+
+   Hooks enable more powerful and flexible functional components, improving code readability and reuse.
+
 10. What is the useEffect hook and how is it different from lifecycle methods in class components?
+
+    The `useEffect` hook in React allows you to perform side effects in functional components, such as data fetching, subscriptions, or manually manipulating the DOM. It runs after the render phase and can be controlled to run only when certain dependencies change.
+
+    Difference from lifecycle methods:
+
+    - In class components, you use lifecycle methods like `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` for handling side effects at different points of the component's life cycle.
+    - `useEffect` combines all these into one function. You can mimic `componentDidMount` by providing an empty dependency array `[]`, and `componentDidUpdate` by specifying dependencies in the array. Cleanup logic can be handled inside the effect to mimic `componentWillUnmount`.
+
+    Example:
+
+    ```javascript
+    useEffect(() => {
+      // Side effect (e.g., data fetch)
+      return () => {
+        // Cleanup (e.g., unsubscribe)
+      };
+    }, [dependencies]);
+    ```
+
+    `useEffect` simplifies the way side effects are handled in functional components compared to lifecycle methods in class components.
 
 **[⬆ back to top](#table-of-contents)**
 
