@@ -61,13 +61,13 @@ import { describe, expect, it } from "vitest";
 import ErrorMessage from "./ErrorMessage";
 
 describe("ErrorMessage", () => {
-  it("render default error state", () => {
+  it("renders default error state", () => {
     render(<ErrorMessage />);
     expect(screen.getByTestId("message-container")).toHaveTextContent(
       "Something went wrong"
     );
   });
-  it("render custom error state", () => {
+  it("renders custom error state", () => {
     render(<ErrorMessage message="Email is already taken" />);
     expect(screen.getByTestId("message-container")).toHaveTextContent(
       "Email is already taken"
@@ -137,7 +137,7 @@ import Tags from "./Tags";
 describe("Tags", () => {
   const server = setupServer(
     http.get("http://localhost:3004/tags", () => {
-      return HttpResponse.json([{ id: "1", name: "bar" }]);
+      return HttpResponse.json([{ id: "1", name: "My First Tag" }]);
     })
   );
 
