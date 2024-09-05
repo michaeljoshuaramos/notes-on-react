@@ -98,7 +98,7 @@
 
 10. **What is the useEffect hook and how is it different from lifecycle methods in class components?**
 
-    The `useEffect` hook in React allows you to perform side effects in functional components, such as data fetching, subscriptions, or manually manipulating the DOM. It runs after the render phase and can be controlled to run only when certain dependencies change.
+    The `useEffect` hook in React allows you to perform side effects in functional components, such as data fetching. It runs after the render phase and can be controlled to run only when certain dependencies change.
 
     Difference from lifecycle methods:
 
