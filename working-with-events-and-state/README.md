@@ -64,7 +64,7 @@ and the component receiving the state as a prop.
 
 - Why use the callback function form of the set function when a state depends on a previous state?
 
-  - Using the callback function form ofw the set function ensures that state updates based on the current state receive the most recent value.
+  - Using the callback function form of the set function ensures that state updates based on the current state receive the most recent value.
   - In React, state updates are asynchronous, which means when you call the set function, React schedules an update rather than immediately applying the changes.
 
 **[⬆ back to top](#table-of-contents)**
@@ -84,10 +84,10 @@ and the component receiving the state as a prop.
 **Expected Solution:**
 
 ```
-import { `useState` } from "react";
+import { useState } from "react";
 
 export default function Home() {
-  const [count, setCount] = `useState`(0);
+  const [count, setCount] = useState(0);
 
   const handleStep = () => {
     setCount((c) => c + 1);
@@ -115,10 +115,10 @@ export default function Home() {
 **Expected Solution:**
 
 ```
-import { `useState` } from "react";
+import { useState } from "react";
 
 export default function Form() {
-  const [formData, setFormData] = `useState`({ name: "", email: "" });
+  const [formData, setFormData] = useState({ name: "", email: "" });
 
   const handleChange = (event) => {
     const { name, value } = event.target;

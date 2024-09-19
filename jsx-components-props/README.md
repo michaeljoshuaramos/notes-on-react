@@ -5,6 +5,8 @@
 1. [JSX](#jsx)
 1. [Components](#components)
 1. [Props](#Props)
+1. [Rendering Lists](#rendering-lists)
+1. [Conditional Rendering](#conditional-rendering)
 
 ## JSX
 
@@ -15,7 +17,7 @@ Here's a succinct example of JSX in React:
 ```jsx
 import React, { useState } from "react";
 
-function Greeting() {
+const Greeting = () => {
   const [name, setName] = useState("");
 
   return (
@@ -29,9 +31,15 @@ function Greeting() {
       />
     </div>
   );
-}
+};
 
 export default Greeting;
 ```
 
 This simple JSX component renders a greeting that updates as the user types a name.
+
+## Components
+
+## Props
+
+The order in which we pass the props in a component is completely irrelevant.
