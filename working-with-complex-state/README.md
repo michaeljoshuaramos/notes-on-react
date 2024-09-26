@@ -4,6 +4,7 @@
 
 1. [A Look at useReducer Hook](#a-look-at-usereducer-hook)
 2. [Summary: useState vs. useReducer Hook](#summary-usestate-vs-usereducer-hook)
+3. [Context API: Passing State to Multiple Deeply Nested Components](#summary-usestate-vs-usereducer-hook)
 
 ## A Look at useReducer Hook
 
@@ -55,3 +56,46 @@ Use useReducer for more complex state management, especially when state updates 
 ## Summary: useState vs. useReducer Hook
 
 ![alt text](image.png)
+
+## Context API: Passing State to Multiple Deeply Nested Components
+
+The **Context API** in React is a way to pass data through the component tree without having to pass props manually at every level, solving the problem of "prop drilling." It allows you to share state across deeply nested components without passing it down through multiple layers.
+
+### Explanation:
+
+The Context API creates a context object that holds the data you want to share. A provider component makes this data available to any component in the tree, while a consumer component can access this data wherever needed.
+
+### Basic Example:
+
+```jsx
+import React, { createContext, useContext, useState } from "react";
+
+// Create context
+const MyContext = createContext();
+
+function Parent() {
+  const [value, setValue] = useState("Hello from Context!");
+
+  return (
+    <MyContext.Provider value={value}>
+      <Child />
+    </MyContext.Provider>
+  );
+}
+
+function Child() {
+  const contextValue = useContext(MyContext);
+  return <div>{contextValue}</div>;
+}
+
+export default Parent;
+```
+
+Here, the `Parent` component provides a value through the `MyContext.Provider`, and the `Child` component accesses that value using `useContext`. This avoids the need to pass props through intermediate components.
+
+**Note: Only the components that consume the context directly will re-render** if the context value changes. However, the nested children of these consuming components will also re-render, but only if they depend on the consuming component's state or props.
+
+To clarify:
+
+- **Direct consumers** of the context (i.e., components that use `useContext` or the `Context.Consumer` component) will re-render when the context value changes.
+- **Nested components** within those consumers will only re-render if they are affected by the re-render of their parent (e.g., through updated props).
