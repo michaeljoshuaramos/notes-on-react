@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [A Look at useReducer Hook](#a-look-at-usereducer-hook)
+2. [Summary: useState vs. useReducer Hook](#summary-usestate-vs-usereducer-hook)
 
 ## A Look at useReducer Hook
 
@@ -10,7 +11,7 @@ The useReducer hook in React is an alternative to useState for managing more com
 
 A reducer function defines how the state should change in response to actions, which are dispatched.
 
-Here's a succinct example using useReducer hook in React:
+Here's a succinct example using `useReducer` hook in React:
 
 ```jsx
 import React, { useReducer } from "react";
@@ -50,3 +51,7 @@ export default Greeting;
 - `dispatch`: Triggers state changes by passing an action object (e.g., `{ type: 'increment' }`).
 
 Use useReducer for more complex state management, especially when state updates depend on previous states or involve multiple actions.
+
+## Summary: useState vs. useReducer Hook
+
+![alt text](image.png)
