@@ -5,6 +5,7 @@
 **Fundamentals**
 
 1. [JSX, Components, and Props](https://github.com/michaeljoshuaramos/notes-on-react/tree/main/jsx-components-props)
+1. [Rendering Lists and Conditional Content](#)
 1. [Working With Events and State](https://github.com/michaeljoshuaramos/notes-on-react/tree/main/working-with-events-and-state)
 1. [Handling Side Effects](#)
 1. [Working With Complex State](#)
