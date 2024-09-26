@@ -59,7 +59,7 @@ Use useReducer for more complex state management, especially when state updates 
 
 ## Context API: Passing State to Multiple Deeply Nested Components
 
-The **Context API** in React is a way to pass data through the component tree without having to pass props manually at every level, solving the problem of "prop drilling." It allows you to share state across deeply nested components without passing it down through multiple layers.
+The **Context API** in React is a way to pass data through the component tree without having to pass props manually at every level, solving the problem of "prop drilling." It allows you to share state across deeply nested components without passing it down through multiple layers. This can make components more stand-alone and focused on their specific functionality without being cluttered with irrelevant props.
 
 ### Explanation:
 
@@ -70,13 +70,14 @@ The Context API creates a context object that holds the data you want to share. 
 ```jsx
 import React, { createContext, useContext, useState } from "react";
 
-// Create context
+// 1. Create context
 const MyContext = createContext();
 
 function Parent() {
   const [value, setValue] = useState("Hello from Context!");
 
   return (
+    // 2. Provide value to child components
     <MyContext.Provider value={value}>
       <Child />
     </MyContext.Provider>
@@ -84,6 +85,7 @@ function Parent() {
 }
 
 function Child() {
+  // 3. Use the context value
   const contextValue = useContext(MyContext);
   return <div>{contextValue}</div>;
 }
