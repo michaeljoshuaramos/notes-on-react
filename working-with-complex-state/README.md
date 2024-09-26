@@ -4,7 +4,7 @@
 
 1. [A Look at useReducer Hook](#a-look-at-usereducer-hook)
 2. [Summary: useState vs. useReducer Hook](#summary-usestate-vs-usereducer-hook)
-3. [Context API: Passing State to Multiple Deeply Nested Components](#summary-usestate-vs-usereducer-hook)
+3. [Context API: Passing State to Multiple Deeply Nested Components](#context-api-passing-state-to-multiple-deeply-nested-components)
 
 ## A Look at useReducer Hook
 
